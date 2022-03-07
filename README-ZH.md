@@ -1,3 +1,6 @@
+Language: [English](README.md) | [中文简体](README-ZH.md)
+
+# flutter_m1_patcher
 替换Flutter默认DartSDK为macOS arm64版本
 
 受https://github.com/Rexios80/flutter_m1_patcher启发，无需再单独安装dart

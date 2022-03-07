@@ -1,3 +1,6 @@
+Language: [English](README.md) | [中文简体](README-ZH.md)
+
+# flutter_m1_patcher
 Replaces Flutter's bundled Dart SDK with the macOS arm64 version
 
 Inspired by https://github.com/Rexios80/flutter_m1_patcher, and installation of standalone dart is not required
