@@ -1,23 +1,26 @@
-This script replaces Flutter's bundled Dart SDK with the macOS arm64 version
+替换Flutter默认DartSDK为macOS arm64版本
 
-Getting Started
-Set up Flutter as normal and run flutter doctor
+受https://github.com/Rexios80/flutter_m1_patcher启发，无需再单独安装dart
 
-Install Dart form homebrew:
-//https://github.com/Rexios80/flutter_m1_patcher
-$ brew tap dart-lang/dart
-$ brew install dart
-This script nukes Flutter's bundled Dart SDK, so trying to run this script with Flutter's bundled Dart SDK will fail
+# 开始使用
 
-Use as an executable
-Installation
-$ dart pub global activate flutter_m1_patcher
-Usage
-Run flutterpatch in a terminal
+- 从https://github.com/Kylin3216/flutter_m1_patcher/releases/download/0.1.0/flutter_m1_patcher下载最新版本
+- 授予权限```chmod +x flutter_m1_patcher```
+- 执行```flutter_m1_patcher -h```获取帮助信息
 
-Run with -p to specify the Flutter root path
+```
+flutter_m1_patcher -h
+USAGE:
+    flutter_m1_patcher [OPTIONS] <SUBCOMMAND>
 
-Additional Information
-If things go bad, delete flutter/bin/cache and run flutter doctor. This will reset the bundled Dart SDK to the one shipped with Flutter.
+OPTIONS:
+    -d, --debug          debug 信息
+    -h, --help           Print help information
+    -p, --path <PATH>    flutter所在目录
+    -V, --version        Print version information
 
-You will need to run flutterpatch after every flutter upgrade
+SUBCOMMANDS:
+    help      Print this message or the help of the given subcommand(s)
+    patch     执行替换dart sdk
+    revert    重置为默认dart sdk
+```
